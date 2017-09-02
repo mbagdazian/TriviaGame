@@ -7,28 +7,27 @@
   		<link rel="stylesheet" type="text/css" href="assets/style/reset.css">
   		<link rel="stylesheet" type="text/css" href="assets/style/style.css">
   		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-  		<link rel="logic" type="javascript" href="assets/javascript/game.css">
+  		<link rel="logic" type="javascript" href="assets/logic.js">
 
 		<meta name="viewport" content="width=device-width" maxwidth ="100%">
 </head>
-<body>
+<body class='body'>
 		<!--this contains a start button that makes the questions appear and timer start-->
-	
-		<div id="start" class="container"></div>
+			<div id="startscreen" class = 'container'>
 			<div id ="row1">
 				<div class="col-lg-8">
-				<div class="panel panel-default">
-					<div>Welcome Padawan! Do you have what it takes to become a Master Jedi? Lets see... successfully match each quote with the character who famously said it!</div>
+					<div class="panel panel-default">
+						<div>Welcome Padawan! Do you have what it takes to become a Master Jedi? Lets see... successfully match each quote with the character who famously said it!</div>
 					<br>
 					<div>Click on the button below to start the Quiz. You have three minutes to complete the quiz. </div>
-					<br> 
-					<button type="button" class="btn btn-primary">Start!</button>
-					<br>
-					<img src="assets/images/LandoLuck.gif" class="giph" id="LandoLuck" alt="1">
-
-				</div>
+					<br> 						
+				<button type="button" class="btn btn-primary" id='start'>Start!</button>
+				<img src="assets/images/LandoLuck.gif" class="giph" id="LandoLuck" alt="1">
+					</div>
 				</div>
 			</div>
+		</div>
+
 
 		<!--this contains the text of our questions and answer buttons -->
 		
@@ -43,9 +42,22 @@
   								<div class="panel-body">
     							   <form>
 								      <fieldset>
-								       <legend>Selecting elements</legend>
 								       <p>
-
+								          <input type = "radio"
+								                 name = "Q1"
+								                 id = "Leia"
+								                 value = "Leia" />
+								          <label for = "Leia">Princess Leia</label>
+								          <input type = "radio"
+								                 name = "Q1"
+								                 id = "Lando"
+								                 value = "Lando" />
+								          <label for = "Lando">Lando Calrissian</label>
+								          <input type = "radio"
+								                 name = "Q1"
+								                 id = "Fett"
+								                 value = "Fett"/>
+								          <label for = "Fett">Boba Fett</label>
 
 								        </p>       
 								      </fieldset>     
@@ -56,63 +68,263 @@
 								<div class="panel panel-default">
   								<div class="panel-heading">2. “You better watch yourself, I have the death sentence in twelve systems.”</div>
   								<div class="panel-body">
-    							Panel content
+    							   <form>
+								     <fieldset>
+								       <p>
+								          <input type = "radio"
+								                 name = "Q2"
+								                 id = "kenobi"
+								                 value = "kenobi"
+								                 unchecked="unchecked" />
+
+								          <label for = "kenobi">Obi-wan</label>
+								          <input type = "radio"
+								                 name = "Q2"
+								                 id = "Fett"
+								                 value = "Fett"/>
+								          <label for = "Fett">Boba Fett</label>
+								          <input type = "radio"
+								                 name = "Q2"
+								                 id = "Evazen"
+								                 value = "Evazen" />
+								          <label for = "Evazen">Dr.Evazen</label>								        
+								        </p>       
+								      </fieldset>     
+								    </form>
   								</div>
 								</div>
 								<!--Q3 -->
 								<div class="panel panel-default">
   								<div class="panel-heading">3. “I know.”</div>
   								<div class="panel-body">
-    							Panel content
+    							   <form>
+								      <fieldset>
+								       <p>
+								          <input type = "radio"
+								                 name = "Q3"
+								                 id = "Maul"
+								                 value = "Maul" />
+								          <label for = "Maul">Darth Maul</label>
+								          <input type = "radio"
+								                 name = "Q3"
+								                 id = "3po"
+								                 value = "3po" />
+								          <label for = "3po">C-3PO</label>								          
+								          <input type = "radio"
+								                 name = "Q3"
+								                 id = "Han"
+								                 value = "Han" />
+								          <label for = "Han">Han Solo</label>
+								        </p>       
+								      </fieldset>     
+								    </form>
   								</div>
 								</div>
 								<!--Q4 -->
 								<div class="panel panel-default">
   								<div class="panel-heading">4. “Oh, I'm afraid the deflector shield will be quite operational when your friends arrive..HEHEHE!”</div>
   								<div class="panel-body">
-    							Panel content
+    							   <form>
+								      <fieldset>
+								       <p>
+								          <input type = "radio"
+								                 name = "Q4"
+								                 id = "vader"
+								                 value = "vader" />
+								          <label for = "vader">Vader</label>
+								          <input type = "radio"
+								                 name = "Q4"
+								                 id = "Palpatine"
+								                 value = "Palpatine" />
+								          <label for = "Palpatine">Emporer Palpatine</label>
+								          <input type = "radio"
+								                 name = "Q4"
+								                 id = "Ackbar"
+								                 value = "Ackbar" />
+								          <label for = "Ackbar">Admiral Ackbar</label>								        
+								        </p>       
+								      </fieldset>     
+								    </form>
   								</div>
 								</div>
 								<!--Q5 -->
 								<div class="panel panel-default">
   								<div class="panel-heading">5. “At last we will have our revenge.”</div>
   								<div class="panel-body">
-    							Panel content
+    							   <form>
+								      <fieldset>
+								        <p>   
+								        <input type = "radio"
+								                 name = "Q5"
+								                 id = "Lando"
+								                 value = "Lando" />
+								          <label for = "Lando">Lando Calrissian</label>
+								        <input type = "radio"
+								                 name = "Q5"
+								                 id = "Wicket"
+								                 value = "Wicket" />
+								          <label for = "Wicket">Wicket the ewok</label>
+								          <input type = "radio"
+								                 name = "Q5"
+								                 id = "Maul"
+								                 value = "Maul" />
+								          <label for = "Maul">Darth Maul</label>
+
+								        </p>       
+								      </fieldset>     
+								    </form>
   								</div>
 								</div>
 								<!--Q6 -->
 								<div class="panel panel-default">
   								<div class="panel-heading">6. “Tracking us? Not this ship sister.”</div>
   								<div class="panel-body">
-    							Panel content
+    							   <form>
+								      <fieldset>
+								       <p>
+								       	<input type = "radio"
+								                 name = "Q6"
+								                 id = "Lando"
+								                 value = "Lando" />
+								          <label for = "Lando">Lando Calrissian</label>
+								          <input type = "radio"
+								                 name = "Q6"
+								                 id = "Luke"
+								                 value = "Luke" />
+								          <label for = "Luke">Luke Skywalker</label>
+								          <input type = "radio"
+								                 name = "Q6"
+								                 id = "Han"
+								                 value = "Han" />
+								          <label for = "Han">Han Solo</label>
+
+
+								        </p>       
+								      </fieldset>     
+								    </form>
   								</div>
 								</div>
 								<!--Q7 -->
 								<div class="panel panel-default">
   								<div class="panel-heading">7. “You truly belong with us among the clouds”</div>
   								<div class="panel-body">
-    							Panel content
+    							   <form>
+								      <fieldset>
+								       <p>
+								          <input type = "radio"
+								                 name = "Q7"
+								                 id = "3po"
+								                 value = "3po"
+								          <label for = "3po">C-3PO</label>
+								          <input type = "radio"
+								                 name = "Q7"
+								                 id = "Lando"
+								                 value = "Lando" />
+								          <label for = "Lando">Lando Calrissian</label>
+								          <input type = "radio"
+								                 name = "Q7"
+								                 id = "kenobi"
+								                 value = "kenobi" />
+								          <label for = "kenobi">Obi-wan</label>
+
+								        </p>       
+								      </fieldset>     
+								    </form>
   								</div>
 								</div>
 								<!--Q8 -->
 								<div class="panel panel-default">
   								<div class="panel-heading">8. “The Force is strong in my family. My father had it, I have it, and my sister...”</div>
   								<div class="panel-body">
-    							Panel content
+    							   <form>
+								      <fieldset>
+								       <p>
+								          <input type = "radio"
+								                 name = "Q8"
+								                 id = "Luke"
+								                 value = "Luke" />
+								          <label for = "Luke">Luke Skywalker</label>
+
+								          <input type = "radio"
+								                 name = "Q8"
+								                 id = "Leia"
+								                 value = "Leia" />
+								          <label for = "Leia">Princess Leia</label>
+								         
+
+								          <input type = "radio"
+								                 name = "Q8"
+								                 id = "Ackbar"
+								                 value = "Ackbar" />
+								          <label for = "Ackbar">Admiral Ackbar</label>
+
+								        </p>       
+								      </fieldset>     
+								    </form>
   								</div>
 								</div>
 								<!--Q9 -->
 								<div class="panel panel-default">
   								<div class="panel-heading">9. “Our cruisers can't repel firepower of that magnitude.”</div>
   								<div class="panel-body">
-    							Panel content
+    							   <form>
+								      <fieldset>
+								       <p>
+								          <input type = "radio"
+								                 name = "Q9"
+								                 id = "Ackbar"
+								                 value = "Ackbar" />
+								          <label for = "Ackbar">Admiral Ackbar</label>
+
+
+								          <input type = "radio"
+								                 name = "Q9"
+								                 id = "Lando"
+								                 value = "Lando" />
+								          <label for = "Lando">Lando Calrissian</label>
+
+
+								          <input type = "radio"
+								                 name = "Q9"
+								                 id = "Wicket"
+								                 value = "Wicket" />
+								          <label for = "Wicket">Wicket the ewok</label>
+
+								        </p>       
+								      </fieldset>     
+								    </form>
   								</div>
 								</div>
 								<!--Q10-->
 								<div class="panel panel-default">
   								<div class="panel-heading">10. “I am fluent in over three million forms of communication.”</div>
   								<div class="panel-body">
-    							Panel content
+    							   <form>
+								      <fieldset>
+								       <p>
+								          <input type = "radio"
+								                 name = "Q10"
+								                 id = "vader"
+								                 value = "vader" />
+								          <label for = "vader">Vader</label>
+
+
+								          <input type = "radio"
+								                 name = "Q10"
+								                 id = "3po"
+								                 value = "3po" />
+								          <label for = "3po">C-3PO</label>
+
+
+								          <input type = "radio"
+								                 name = "Q10"
+								                 id = "kenobi"
+								                 value = "kenobi" />
+								          <label for = "kenobi">Obi-wan</label>
+
+								        </p>       
+								      </fieldset>     
+								    </form>
   								</div>
 								</div>
 						</div>
@@ -131,7 +343,8 @@
 				<div class="col-lg-8">
 					<div class="panel panel-default">
 						<div>Finished? Go ahead and click stop to see your results!</div>
-						<button type="button" class="btn btn-primary">Stop!</button>
+						<br>
+						<button type="button" id='stop' class="btn btn-primary">Stop!</button>
 					</div>
 				</div>
 			</div>
@@ -151,7 +364,29 @@
 				</div>			
 			</div>
 		</div>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript">
+  	$(document).ready(function(){	
+	$('#row2').hide();
+	$('#row3').hide();
+	$('#row4').hide();
 
+$('button').click(function(){
+
+	$('#row2').show();
+	$('#row3').show();
+
+
+})
+
+
+
+	})
+
+
+
+
+  </script>
 
 
 </body>
