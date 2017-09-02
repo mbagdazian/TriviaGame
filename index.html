@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Star Wars Trivia</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  		<link rel="stylesheet" type="text/css" href="assets/style/reset.css">
+  		<link rel="stylesheet" type="text/css" href="assets/style/style.css">
+  		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  		<link rel="logic" type="javascript" href="assets/javascript/game.css">
+
+		<meta name="viewport" content="width=device-width" maxwidth ="100%">
+</head>
+<body>
+		<!--this contains a start button that makes the questions appear and timer start-->
+	
+		<div id="start" class="container"></div>
+			<div id ="row1">
+				<div class="col-lg-8">
+				<div class="panel panel-default">
+					<div>Welcome Padawan! Do you have what it takes to become a Master Jedi? Lets see... successfully match each quote with the character who famously said it!</div>
+					<br>
+					<div>Click on the button below to start the Quiz. You have three minutes to complete the quiz. </div>
+					<br> 
+					<button type="button" class="btn btn-primary">Start!</button>
+					<br>
+					<img src="assets/images/LandoLuck.gif" class="giph" id="LandoLuck" alt="1">
+
+				</div>
+				</div>
+			</div>
+
+		<!--this contains the text of our questions and answer buttons -->
+		
+		<div id="questions" class="container">
+			<div id ="row2">
+				<div class="col-lg-8">
+					<div class="panel panel-default">
+						<div id="questions">
+								<!--Q1 -->
+								<div class="panel panel-default">
+  								<div class="panel-heading">1. “Governor Tarkin, I thought I smelled your fouls stench when I was brought on board.”</div>
+  								<div class="panel-body">
+    							   <form>
+								      <fieldset>
+								       <legend>Selecting elements</legend>
+								       <p>
+
+
+								        </p>       
+								      </fieldset>     
+								    </form>
+  								</div>
+								</div>
+								<!--Q2 -->
+								<div class="panel panel-default">
+  								<div class="panel-heading">2. “You better watch yourself, I have the death sentence in twelve systems.”</div>
+  								<div class="panel-body">
+    							Panel content
+  								</div>
+								</div>
+								<!--Q3 -->
+								<div class="panel panel-default">
+  								<div class="panel-heading">3. “I know.”</div>
+  								<div class="panel-body">
+    							Panel content
+  								</div>
+								</div>
+								<!--Q4 -->
+								<div class="panel panel-default">
+  								<div class="panel-heading">4. “Oh, I'm afraid the deflector shield will be quite operational when your friends arrive..HEHEHE!”</div>
+  								<div class="panel-body">
+    							Panel content
+  								</div>
+								</div>
+								<!--Q5 -->
+								<div class="panel panel-default">
+  								<div class="panel-heading">5. “At last we will have our revenge.”</div>
+  								<div class="panel-body">
+    							Panel content
+  								</div>
+								</div>
+								<!--Q6 -->
+								<div class="panel panel-default">
+  								<div class="panel-heading">6. “Tracking us? Not this ship sister.”</div>
+  								<div class="panel-body">
+    							Panel content
+  								</div>
+								</div>
+								<!--Q7 -->
+								<div class="panel panel-default">
+  								<div class="panel-heading">7. “You truly belong with us among the clouds”</div>
+  								<div class="panel-body">
+    							Panel content
+  								</div>
+								</div>
+								<!--Q8 -->
+								<div class="panel panel-default">
+  								<div class="panel-heading">8. “The Force is strong in my family. My father had it, I have it, and my sister...”</div>
+  								<div class="panel-body">
+    							Panel content
+  								</div>
+								</div>
+								<!--Q9 -->
+								<div class="panel panel-default">
+  								<div class="panel-heading">9. “Our cruisers can't repel firepower of that magnitude.”</div>
+  								<div class="panel-body">
+    							Panel content
+  								</div>
+								</div>
+								<!--Q10-->
+								<div class="panel panel-default">
+  								<div class="panel-heading">10. “I am fluent in over three million forms of communication.”</div>
+  								<div class="panel-body">
+    							Panel content
+  								</div>
+								</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+
+		<!--this button will stop the quiz if the user finishes before 3 minutes and generate results-->
+		
+		<div id="stop" class = 'container'>
+			<div id ="row3">
+				<div class="col-lg-8">
+					<div class="panel panel-default">
+						<div>Finished? Go ahead and click stop to see your results!</div>
+						<button type="button" class="btn btn-primary">Stop!</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--this will show the user correct answers-->
+
+		<div id="results" class='container'>
+			<div id = 'row4'>
+				<div class="col-lg-8">
+								<div class="panel panel-default">
+  								<div class="panel-heading">Results</div>
+  								<div class="panel-body">
+    								<div>Correct Answers: <span id='results'></span> out of 10<div>
+    								<div id='Gif'> </div> 
+  								</div>
+								</div>
+				</div>			
+			</div>
+		</div>
+
+
+
+</body>
+</html>
